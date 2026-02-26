@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.contrib.auth.models import User
 
 def fix_admin(request):
-    # Purane users ko delete karke naya 'shashwat' user banayega
+    # Purane 'shashwat' user ko delete karke naya banayega
     User.objects.filter(username='shashwat').delete()
     User.objects.create_superuser('shashwat', 'admin@example.com', 'pass123')
     return JsonResponse({"message": "User 'shashwat' created with password 'pass123'"})
