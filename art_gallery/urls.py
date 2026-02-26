@@ -19,12 +19,12 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 # Yahan error aa raha tha, ab ye sahi hai
 from api.views import ArtworkViewSet 
-from api.views import fix_admin
+from api.views import fix_admin  # Ye line check karein
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fix-my-login/', fix_admin), # Ye temporary link hai
-    # ... baaki urls
+    path('fix-my-login/', fix_admin),
+    # ... baki urls
 ]
 
 # Router setup
