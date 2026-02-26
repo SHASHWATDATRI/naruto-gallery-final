@@ -92,7 +92,7 @@ DATABASES = {
         'HOST': 'mysql-ce99858-shashwatdwivedi67-46d3.i.aivencloud.com',
         'PORT': '14008',
         'OPTIONS': {
-            'ssl': {'ca': '/etc/ssl/certs/ca-certificates.crt'}
+            'ssl': True
         }
     }
 }
